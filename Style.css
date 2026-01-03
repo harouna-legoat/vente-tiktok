@@ -1,0 +1,17 @@
+#annonces {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.annonce {
+    background: #f5f8ff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.annonce img {
+    width: 100%;
+    border-radius: 6px;
+}

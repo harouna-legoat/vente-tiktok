@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Vente Comptes TikTok Sécurisés</title>
+
+    <!-- LIAISON CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="navbar">
+    <div class="logo">🏠 Vente Comptes TikTok Sécurisés</div>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Vendre</a>
+        <a href="#">Acheter</a>
+        <a href="#">Transactions</a>
+        <a href="#" onclick="ouvrirWhatsApp()">Support</a>
+    </nav>
+</header>
+
+<!-- ================= CONNEXION ================= -->
+<section class="banner">
+    <h1>Connexion</h1>
+
+    <input type="email" id="email" placeholder="Email Gmail">
+    <input type="password" id="code" placeholder="Code de connexion">
+
+    <button class="btn" onclick="connexion()">Connexion</button>
+</section>
+
+<!-- ================= DEPOT ================= -->
+<section class="container">
+
+    <div class="card">
+        <h2>Déposer un Compte à Vendre</h2>
+
+        <input type="text" id="tiktok" placeholder="@username TikTok">
+        <input type="number" id="abonnes" placeholder="Nombre d'abonnés">
+        <input type="number" id="prix" placeholder="Prix de vente (chiffres uniquement)">
+        <input type="text" id="orange" placeholder="Numéro Orange Money">
+        <input type="file" id="photo" accept="image/*">
+
+        <button class="btn full" onclick="deposerCompte()">Déposer l'annonce</button>
+    </div>
+
+    <div class="side">
+
+        <div class="card info">
+            <h3>Paiement Sécurisé</h3>
+            <p>✔ Orange Money uniquement</p>
+            <p>✔ Validation manuelle par l’admin</p>
+        </div>
+
+        <div class="card info">
+            <h3>Service Client</h3>
+            <button class="btn full" onclick="ouvrirWhatsApp()">
+                Contacter sur WhatsApp
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= ANNONCES ================= -->
+<section class="transaction">
+    <h2>Annonces Publiées</h2>
+    <div id="annonces"></div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© Vente sécurisée de comptes TikTok</p>
+</footer>
+
+<!-- LIAISON JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>

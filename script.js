@@ -94,3 +94,4 @@ function ouvrirWhatsApp() {
 }
 
 window.onload = afficherAnnonces;
+deposerCompteFirebase(annonce);
